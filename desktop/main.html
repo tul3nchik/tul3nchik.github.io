@@ -1,49 +1,76 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<link id="maincss" rel="stylesheet" type="text/css" href="style.css">
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,800&display=swap" rel="stylesheet"><script
-  src="https://code.jquery.com/jquery-3.4.1.js"
-  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
-  crossorigin="anonymous"></script>
+	<link href="https://fonts.googleapis.com/css?family=Oswald:300,400,500,600&display=swap&subset=cyrillic" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="style.css">
 	<script type="text/javascript" src="core.js"></script>
-	
-	<style type="text/css">
-		html{
-			height: 600px;
-			width: 500px;
-		}
-	</style>
-
-	<title>tul3nchik/blog</title>
+	<title></title>
 </head>
 <body>
-	<div id="preloader">
-		
+	<header>
+		<h1>Расчёт полиграфического заказа</h1>
+	</header>
+	<div id="ch_cont">
+		<h2>Выберите услугу:</h2>
+		<a class="link_buts" onclick="showhide('form-s', 'form-b')">Печать</a><a class="link_buts" onclick="showhide('form-b', 'form-s')">Ламинирование</a>
 	</div>
-	<head>
-		<h1 style="padding: 25px;"><a>tul3nchik/blog</a></h1>
-	</head>
-	<div id="mainpage" align="left"><div id="mainblocks">
-	<script type="text/javascript" src="core.js"></script>
-			<div class="blocks">
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ac scelerisque sapien, non pretium arcu.
-			<br><br>
-			<a class="next" onclick="newpage('p1')">Открыть</a>
-			<p class="date">10/02/2020</p>
-		</div>
-		<div class="blocks">dadwadwadad<br><br><a onclick="newpage('p2')" class="next">Перейти</a><p class="date">10/02/2020</p></div>			
-	</div>
-		<?php include "pages.html"; ?>
-	<footer>
-		<p><a class="links" onclick="about()">about</a> <a class="links" onclick="contacts()">contacts</a><a class="links" onclick="dmode()" id="dark">dark</a><a class="links" onclick="lmode()" id="light">light</a></p>
-		<div id="contacts">
-			<a href="http://vk.com/tul3nchik"><img src="vk.png" class="imgcon" style="left: 10px;"></a>
-			<a href="http://vk.com/tul3nchik"><img src="vk.png" class="imgcon" style="left: 70px;"></a>
-			<a href="http://vk.com/tul3nchik"><img src="vk.png" class="imgcon" style="left: 130px;"></a>
-			ilzar.syubaev145@gmail.com
-		</div>
-	</footer>
+
+	<form class="forms" id="form-s">
+		Выберите формат бумаги:
+		<select class="select-f" name="paper_type" id="paper_type">
+			<option>А0</option>
+			<option>А1</option>
+			<option>А2</option>
+			<option>А3</option>
+			<option>А4</option>
+			<option>А5</option>
+			<option>А6</option>
+		</select><br>
+		Выберите формат печати:
+		<select class="select-f" name="print_type" id="print_type">
+			<option>Монохромная</option>
+			<option>Лазерная</option>
+			<option>Струйная</option>
+		</select><br>
+		Выберите плотность бумаги:
+		<select class="select-f" name="pages_density" id="paper_den" onchange="hide_metric()">
+			<option>60-90</option>
+			<option>91-157</option>
+			<option>158-209</option>
+			<option>210-256</option>
+			<option>257-300</option>
+			<option>Фотобумага</option>
+		</select> <span id="metr">гм/м<sup>2</sup></span><br>
+		Выберите процент заливки:
+		<select  class="select-f" name="fill" id="fill">
+			<option>Меньше 50%</option>
+			<option>Больше 50%</option>
+		</select><br>
+		Введите количество страниц:
+		<input type="input" class="select-f" id="inp_pages" name="pages_num"><br>
+		<a class="link_buts" id="calc_but" onclick="calculate()">Рассчитать</a>
+		<p id="result_u"></p><p id="result_d"></p>
+	</form>
+
+	<form class="forms" id="form-b">
+		Выберите формат бумаги:
+		<select class="select-f" name="paper_type_lam" id="paper_type_lam">
+			<option>А3</option>
+			<option>А4</option>
+			<option>А5</option>
+		</select><br>
+		Выберите плотность бумаги:
+		<select class="select-f" name="pages_density" id="paper_den" onchange="hide_metric()">
+			<option>60-90</option>
+			<option>91-157</option>
+			<option>158-209</option>
+			<option>210-256</option>
+			<option>257-300</option>
+			<option>Фотобумага</option>
+		</select>
+		Введите количество страниц:
+		<input type="input" class="select-f" id="inp_pages" name="pages_num"><br>
+		<button class="link_buts" id="calc_but">Рассчитать</button>
+	</form>
 </body>
 </html>
