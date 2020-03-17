@@ -1,0 +1,166 @@
+*
+{
+	margin: 0;
+	font-family: 'Open Sans', sans-serif;
+}
+.imgcon
+{
+	position: absolute;
+	margin-left: 10px;
+	width: 50px;
+}
+
+.images
+{
+	min-width: 500px;
+	max-width: 2000px;
+	padding-top: 10px;
+	border-radius: 20px;
+}
+
+#preloader {
+	
+	position: fixed;
+	width: 100vw;
+	height: 100vh;
+	z-index: 100;
+}
+
+#mainpage
+{
+	min-width: 350px;
+	width: 100vw;
+	display: all;
+}
+
+#light
+{
+	display: none;
+}
+
+body
+{
+	overflow-x: hidden;
+}
+.blocks
+{
+	background: white;
+	float: left;
+	width: 300px;
+	height: 200px;
+	padding: 50px;
+	margin: 25px;
+	border: solid 1px #D9D9D9;
+	text-align: justify;
+}
+
+
+h1
+{
+	color: rgba(0,0,0,0.3);
+	pointer-events: none;
+	user-select:none;
+}
+
+footer
+{
+	color: rgba(0,0,0,0.3);
+	width: 100vw;
+	font-size: 50px;
+	font-weight: 100;
+	padding-left: 10px;
+	float: left;
+	box-sizing: border-box;
+	border-top: solid 1px #D9D9D9;
+}
+
+.links
+{
+	color: rgba(0,0,0,0.3);
+	font-weight: 100;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.links:hover
+{
+	font-weight: 400;
+	text-decoration: none;
+	user-select:none;
+}
+
+.next
+{
+	text-align: center;
+	text-decoration: none;
+	color: black;
+	border: solid 1px #A9A9A9;
+    transition-duration: 0.5s;
+    cursor: pointer;
+}
+.next:hover
+{
+	text-align: center;
+	text-decoration: none;
+	color: white;
+	background: #A9A9A9;
+    cursor: pointer;
+}
+
+a
+{
+	padding: 10px;
+	border-radius: 10px;
+}
+
+.date
+{
+	position: absolute;
+	margin-top: 10px;
+	pointer-events: none;
+	font-size: 50px;
+	font-weight: 700;
+	color: rgba(0,0,0,0.1);
+}
+
+
+#contacts
+{
+	visibility: hidden;
+	font-size: 40px;
+	padding-left: 160px;
+	text-align: left;
+	align-content: left;
+}
+
+
+.blocks_s
+{
+	background: white;
+	float: left;
+	max-width: 2000px;
+	min-height: 500px;
+	max-height: 2000px;
+	padding: 50px;
+	padding-bottom: 10px;
+	margin: 25px;
+	border: solid 0.5px #D9D9D9;
+	text-align: justify;
+}
+
+a
+{
+	text-decoration: none;
+	color: rgba(0,0,0,0.3);
+}
+
+#about
+{
+	visibility: hidden;
+	position: absolute;
+	margin:0;
+	z-index: 99;
+	height: 100vh;
+	width: 100vw;
+	background-color: white;
+}

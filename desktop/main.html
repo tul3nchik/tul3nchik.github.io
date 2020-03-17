@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link id="maincss" rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,800&display=swap" rel="stylesheet"><script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
+	<script type="text/javascript" src="core.js"></script>
+
+	<title>tul3nchik/blog</title>
+</head>
+<body>
+	<div id="preloader">
+		
+	</div>
+	<head>
+		<h1 style="padding: 25px;"><a>tul3nchik/blog</a></h1>
+	</head>
+	<div id="mainpage" align="left"><div id="mainblocks">
+	<script type="text/javascript" src="core.js"></script>
+			<div class="blocks">
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ac scelerisque sapien, non pretium arcu.
+			<br><br>
+			<a class="next" onclick="newpage('p1')">Открыть</a>
+			<p class="date">10/02/2020</p>
+		</div>
+		<div class="blocks">dadwadwadad<br><br><a onclick="newpage('p2')" class="next">Перейти</a><p class="date">10/02/2020</p></div>			
+	</div>
+		<?php include "pages.html"; ?>
+	<footer>
+		<p><a class="links" onclick="about()">about</a> <a class="links" onclick="contacts()">contacts</a><a class="links" onclick="dmode()" id="dark">dark</a><a class="links" onclick="lmode()" id="light">light</a></p>
+		<div id="contacts">
+			<a href="http://vk.com/tul3nchik"><img src="vk.png" class="imgcon" style="left: 10px;"></a>
+			<a href="http://vk.com/tul3nchik"><img src="vk.png" class="imgcon" style="left: 70px;"></a>
+			<a href="http://vk.com/tul3nchik"><img src="vk.png" class="imgcon" style="left: 130px;"></a>
+			ilzar.syubaev145@gmail.com
+		</div>
+	</footer>
+</body>
+</html>
