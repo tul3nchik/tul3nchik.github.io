@@ -5,6 +5,20 @@
 	font-weight: 200;
 }
 
+footer
+{
+	font-size: 20pt;
+	font-weight: 600;
+	color: black;
+	padding-left: 5vw;
+	padding-top: 2.5vh;
+	padding-bottom: 2.5vh;
+	position: fixed;
+	height: 10vh;
+	bottom: 0; left: 0; right: 0;
+	background-color: #fdcd17;
+}
+
 @-webkit-keyframes AnimationName {
     0%{background-position:0% 55%}
     50%{background-position:100% 46%}
