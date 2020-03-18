@@ -29,7 +29,7 @@ body
 }
 header
 {
-	font-size: 25pt;
+	font-size: 2vh;
 	color: black;
 	text-align: center;
 	padding: 20px 0 20px 0; 
@@ -46,18 +46,19 @@ header
 #ch_cont
 {
 
-	font-size: 35pt;
+	font-size: 5vw;
+	line-height: 7.5vh;
 	width: 500px;
 	margin-left: 50px;
 	padding: 20px;
 	border-radius: 20px;
-	line-height: 75pt;
 }
 
 .forms
 {
-	line-height: 75pt;
-	font-size: 35pt;
+
+	font-size: 5vw;
+	line-height: 7.5vh;
 	max-width: 1000px;
 	min-width: 600px;
 	margin: 0px 50px 50px 50px;
@@ -68,7 +69,7 @@ header
 
 .link_buts
 {
-	font-size: 35pt;
+	font-size: 5vw;
 	margin-right: 10px;
 	text-decoration: none;
 	cursor: pointer;
@@ -89,7 +90,7 @@ header
 
 .select-f
 {
-	font-size: 35pt;
+	font-size: 5vw;
 	border-radius: 10px;
 	padding: 2px;
 	border: solid 1px grey;
