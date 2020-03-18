@@ -72,13 +72,13 @@ header
 	border: solid 1px grey;
 }
 
-#inp_pages
+#inp_pages, #inp_pages_lam
 {
 	text-align: center;
 	width: 40px;
 }
 
-#calc_but
+#calc_but, #calc_but_lam
 {
 	font-size: 14pt;
 	padding: 5px;

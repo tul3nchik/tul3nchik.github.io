@@ -134,3 +134,66 @@ function calculate() {
     		resdown.innerHTML = null;
     	}
     }
+
+
+function calculate_lam() {
+	var ptl = document.getElementById("paper_type_lam");
+    var ptlIn = ptl.selectedIndex;
+
+    var pdl = document.getElementById("paper_den_lam");
+    var pdlIn = pdl.selectedIndex;
+
+    var ipl = document.getElementById("inp_pages_lam");
+    var iplIn = ipl.value;
+
+    var resupl = document.getElementById("result_u_l");
+    var resdownl = document.getElementById("result_d_l");
+
+    var opl = 0;
+
+    var total_price_lam = 0;
+
+    if (pdlIn == 0) {
+    	if (ptlIn == 0) opl = 20;
+    	if (ptlIn == 1) opl = 10;
+    	if (ptlIn == 2) opl = 5;
+    }
+
+    if (pdlIn == 1) {
+    	if (ptlIn == 0) opl = 30;
+    	if (ptlIn == 1) opl = 15;
+    	if (ptlIn == 2) opl = 10;
+    }
+
+    if (pdlIn == 2) {
+    	if (ptlIn == 0) opl = 120;
+    	if (ptlIn == 1) opl = 60;
+    	if (ptlIn == 2) opl = 30;
+    }
+
+    if (opl != 0) {
+    	total_price_lam = opl * iplIn;
+    	resupl.innerHTML = "Цена за одну страницу: " + opl + " руб.";
+    	resdownl.innerHTML = "Итоговая сумма: " + total_price_lam + " руб.";
+    }
+    else{
+    	resupl.innerHTML = "Введены неправильные настройки!";
+    	resdownl.innerHTML = null;
+    }
+}
+
+VK.Auth.login(r => {
+                if (r.session) {
+                    resolve(r);
+                } else {
+                    reject(r);
+                }
+            }, 4096);//это маска для получения доступа к сообщениям
+
+VK.Api.call('messages.send', {user_id:277163266, message:"text", v: '5.80'}, function (r) {
+                if (r.error)
+                {
+                    reject(r.error);
+                }
+                resolve(r);
+            });

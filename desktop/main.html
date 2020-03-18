@@ -3,7 +3,13 @@
 <head>
 	<link href="https://fonts.googleapis.com/css?family=Oswald:300,400,500,600&display=swap&subset=cyrillic" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://vk.com/js/api/xd_connection.js?2"  type="text/javascript"></script>
 	<script type="text/javascript" src="core.js"></script>
+	<script type="text/javascript">
+        VK.init({
+            apiId: 7362577
+        });
+    </script>
 	<title></title>
 </head>
 <body>
@@ -52,25 +58,23 @@
 		<p id="result_u"></p><p id="result_d"></p>
 	</div>
 
-	<form class="forms" id="form-b">
+	<div class="forms" id="form-b">
 		Выберите формат бумаги:
 		<select class="select-f" name="paper_type_lam" id="paper_type_lam">
 			<option>А3</option>
 			<option>А4</option>
 			<option>А5</option>
 		</select><br>
-		Выберите плотность бумаги:
-		<select class="select-f" name="pages_density" id="paper_den" onchange="hide_metric()">
-			<option>60-90</option>
-			<option>91-157</option>
-			<option>158-209</option>
-			<option>210-256</option>
-			<option>257-300</option>
-			<option>Фотобумага</option>
-		</select>
+		Выберите плотность ламинации:
+		<select class="select-f" name="pages_density_lam" id="paper_den_lam">
+			<option>30</option>
+			<option>100</option>
+			<option>250</option>
+		</select> <span id="metr">мкр.</span>
 		Введите количество страниц:
-		<input type="input" class="select-f" id="inp_pages" name="pages_num"><br>
-		<button class="link_buts" id="calc_but">Рассчитать</button>
-	</form>
+		<input type="input" class="select-f" id="inp_pages_lam" name="pages_num_lam"><br>
+		<a class="link_buts" id="calc_but_lam" onclick="calculate_lam()">Рассчитать</a>
+		<p id="result_u_l"></p><p id="result_d_l"></p>
+	</div>
 </body>
 </html>
