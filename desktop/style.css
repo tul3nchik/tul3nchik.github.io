@@ -56,6 +56,31 @@ header
 	animation: AnimationName 11s ease infinite;
 }
 
+#alpha_but
+{
+	font-size: 20px;
+	padding-bottom: 5px;
+	text-align: center;
+	color: black;
+	background-color: rgba(255,255,255,1);
+	border: none;
+	box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.5);
+	position: fixed;
+	display: inline-block;
+	height: 35px;
+	width: 35px;
+	top: 10vh;
+	margin-left: 610px;
+	border-radius: 50%;
+}
+
+#alpha_but:hover
+{
+	color: white;
+	font-weight: 600;
+	background: rgba(253, 205, 23, 1);
+	box-shadow: 0px 0px 10px 0px rgba(253, 205, 23, 1);
+}
 #ch_cont
 {
 
@@ -120,3 +145,27 @@ header
 }
 
 #form-s, #form-b { display: none; line-height: 32.5pt;}
+
+
+#alpha
+{
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	text-align: justify;
+	padding-top: 150px;
+	background: rgba(0,0,0,0.7);
+	height: 600px;
+	width: 700px;
+	cursor: pointer;
+}
+
+#alp_head
+{
+	width: 550px;
+	padding-left: 75px;
+	height: 550px;
+	padding-top: 75px;
+}

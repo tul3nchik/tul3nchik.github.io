@@ -181,3 +181,12 @@ function calculate_lam() {
     	resdownl.innerHTML = null;
     }
 }
+
+function showalpha() {
+    var showal = document.getElementById('alpha');
+    if(showal.style.display != 'block'){
+        showal.style.display = 'block';
+    }
+    else
+        showal.style.display = 'none';
+}
