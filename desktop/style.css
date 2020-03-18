@@ -4,6 +4,15 @@
 	font-family: 'Oswald', sans-serif;
 	font-weight: 200;
 }
+::-moz-selection {
+  color: #202020;
+  background: #fdcd17;
+}
+
+::selection {
+  color: #202020;
+  background: #fdcd17;
+} 
 
 footer
 {
