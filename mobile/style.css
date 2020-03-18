@@ -61,16 +61,16 @@ header
 	font-size: 5vw;
 	width: 95vw;
 	padding-left: 5vw;
-	padding-top: 5vh;
-	padding-bottom: 5vh;
-	margin-bottom: 10vh;
+	padding-top: 2vh;
+	padding-bottom: 5.5vh;
+	margin-bottom: 15vh;
 	border-radius: 20px;
 }
 
 .link_buts
 {
 	font-size: 5vw;
-	line-height: 6vw;
+	line-height: 15vw;
 	margin-right: 10px;
 	text-decoration: none;
 	cursor: pointer;
@@ -120,6 +120,7 @@ footer
 	color: black;
 	padding-left: 5vw;
 	padding-top: 2.5vh;
+	padding-bottom: 2.5vh;
 	position: fixed;
 	height: 10vh;
 	bottom: 0; left: 0; right: 0;
