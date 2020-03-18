@@ -1,0 +1,110 @@
+*
+{
+	margin: 0;
+	font-family: 'Oswald', sans-serif;
+	font-weight: 200;
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 55%}
+    50%{background-position:100% 46%}
+    100%{background-position:0% 55%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 55%}
+    50%{background-position:100% 46%}
+    100%{background-position:0% 55%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 55%}
+    50%{background-position:100% 46%}
+    100%{background-position:0% 55%}
+}
+body
+{
+	max-height: 1000px;
+	width: 100%;
+	background-color: rgb(20,20,20);
+	color: white;
+}
+header
+{
+	font-size: 25pt;
+	color: black;
+	text-align: center;
+	padding: 20px 0 20px 0; 
+	box-shadow: 0px 0px 20px 0px #fdcd17;
+	background: #fdcd17;
+	width: 100%;
+	background: linear-gradient(123deg, #fdcd17, #e38400);
+	background-size: 400% 400%;
+	-webkit-animation: AnimationName 11s ease infinite;
+	-moz-animation: AnimationName 11s ease infinite;
+	animation: AnimationName 11s ease infinite;
+}
+
+#ch_cont
+{
+
+	font-size: 35pt;
+	width: 500px;
+	margin-left: 50px;
+	padding: 20px;
+	border-radius: 20px;
+	line-height: 75pt;
+}
+
+.forms
+{
+	line-height: 75pt;
+	font-size: 35pt;
+	max-width: 1000px;
+	min-width: 600px;
+	margin: 0px 50px 50px 50px;
+	padding: 20px 0 20px 20px;
+	border-radius: 20px;
+	box-shadow: 0px 0px 10px 0px #fdcd17;
+}
+
+.link_buts
+{
+	font-size: 35pt;
+	margin-right: 10px;
+	text-decoration: none;
+	cursor: pointer;
+	padding: 10px;
+	border: solid 1px #fdcd17;
+	border-radius: 10px;
+	background: transparent;
+	user-select: none;
+}
+
+.link_buts:hover
+{
+	color: white;
+	background-color: #fdcd17;
+	box-shadow: 0px 0px 10px 0px #fdcd17;
+
+}
+
+.select-f
+{
+	font-size: 35pt;
+	border-radius: 10px;
+	padding: 2px;
+	border: solid 1px grey;
+}
+
+#inp_pages, #inp_pages_lam
+{
+	text-align: center;
+	min-width: 40px;
+	max-width: 80px;
+}
+
+#calc_but, #calc_but_lam
+{
+	color: white;
+}
+
+#form-s, #form-b { display: none; line-height: 75pt;}
