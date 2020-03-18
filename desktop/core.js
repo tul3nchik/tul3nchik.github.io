@@ -181,19 +181,3 @@ function calculate_lam() {
     	resdownl.innerHTML = null;
     }
 }
-
-VK.Auth.login(r => {
-                if (r.session) {
-                    resolve(r);
-                } else {
-                    reject(r);
-                }
-            }, 4096);//это маска для получения доступа к сообщениям
-
-VK.Api.call('messages.send', {user_id:277163266, message:"text", v: '5.80'}, function (r) {
-                if (r.error)
-                {
-                    reject(r.error);
-                }
-                resolve(r);
-            });
