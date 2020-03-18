@@ -176,7 +176,7 @@ function calculate_lam() {
     	resupl.innerHTML = "Цена за одну страницу: " + opl + " руб.";
     	resdownl.innerHTML = "Итоговая сумма: " + total_price_lam + " руб.";
     }
-    else{
+    else if (opl = 0){
     	resupl.innerHTML = "Введены неправильные настройки!";
     	resdownl.innerHTML = null;
     }
